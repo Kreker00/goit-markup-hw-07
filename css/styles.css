@@ -484,7 +484,17 @@ body {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  gap: 24px;
+  gap: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .alignment-gap-team {
+    gap: 64px 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .alignment-gap-team {
+    gap: 0 24px;
+  }
 }
 
 .team-employee {
@@ -545,20 +555,34 @@ body {
 
 /* ----- section 5 ----- */
 
-@media only screen and (min-width: 1158px) {
-  .demonstration-customers {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--navy-blue-dark);
-    margin-bottom: 72px;
-  }
+.demonstration-customers {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue-dark);
+  margin-bottom: 72px;
 }
 
 .customers-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 72px 16px;
+}
+@media only screen and (min-width: 768px) {
+  .customers-list {
+    gap: 72px 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .customers-list {
+    gap: 0 24px;
+  }
 }
 
 .customers-list-elemant {
@@ -782,15 +806,29 @@ body {
 /* ======================== */
 .portfolio-projects {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-projects {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-projects {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
 }
 
 .projects-item {
   position: relative;
   box-sizing: content-box;
-  display: inline-block;
+  display: block;
   width: 360px;
   height: 420px;
 }
