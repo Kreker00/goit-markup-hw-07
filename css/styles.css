@@ -140,9 +140,28 @@ body {
 /* -------- header -------- */
 /* ======================== */
 .hat {
+  background-color: var(--white-background);
+  width: 100%;
   border-bottom: 1px solid var(--cornflower-accent);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
+  min-width: 320px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .hat {
+    min-width: 768px;
+  }
+}
+@media only screen and (min-width: 1158px) and (max-width: 1440px) {
+  .hat {
+    min-width: 1158px;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .hat {
+    max-width: 1440px;
+  }
 }
 
 .hat-box {
@@ -172,9 +191,24 @@ body {
   color: var(--navy-blue-dark);
 }
 
+.knoke-burger {
+}
+#burger-menu {
+}
+@media only screen and (min-width: 768px) {
+  #burger-menu {
+    display: none;
+  }
+}
+
 .nav {
-  display: flex;
-  gap: 40px;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    gap: 40px;
+  }
 }
 
 .nav-element {
@@ -225,8 +259,7 @@ body {
 }
 
 .contact-list {
-  display: flex;
-  gap: 12px 0;
+  display: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .contact-list {
@@ -756,16 +789,28 @@ body {
 /* ======================== */
 
 /* ======================== */
-/* -------- button -------- */
+/* -------- Фильтор -------- */
 /* ======================== */
-
 .portfolio-main {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 46px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-main {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-main {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
 
 .list-port-button {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
@@ -806,21 +851,19 @@ body {
 /* ======================== */
 .portfolio-projects {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
 @media only screen and (min-width: 768px) {
   .portfolio-projects {
-    column-gap: 24px;
     row-gap: 72px;
   }
 }
 @media only screen and (min-width: 1158px) {
   .portfolio-projects {
-    column-gap: 24px;
     row-gap: 48px;
   }
 }
