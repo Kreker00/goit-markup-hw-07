@@ -193,7 +193,7 @@ body {
 
 .knoke-burger {
   background-color: transparent;
-  border: 1;
+  border: 1px;
   border-radius: 4px;
   margin-left: auto;
   margin-right: 16px;
@@ -206,11 +206,11 @@ body {
 #burger-menu {
   fill: var(--navy-blue-dark);
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   #burger-menu {
     display: none;
   }
-}
+} */
 
 .nav {
   display: none;
