@@ -704,7 +704,8 @@ body {
     align-items: baseline;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 0;
+    padding-left: 15px;
+    column-gap: 0;
     margin-right: auto;
     margin-left: auto;
   }
@@ -988,7 +989,6 @@ body {
 }
 
 .portfolio-overlay-text {
-  position: absolute;
   position: absolute;
   top: 0;
   left: 0;
