@@ -208,25 +208,16 @@ body {
 /* ======================== */
 /* ------ Mobail menu ----- */
 /* ======================== */
-/* .mobile-close-dtn {
-  position: absolute;
-  top: 24px;
-  right: 24px;
 
- 
-
-
- 
-}
-
-.mobile-close-dtn:hover,
-.mobile-close-dtn:focus {
-  fill: var(--white-background);
-  background-color: var(--ocean-pressed-state);
-  border: 0; */
 .menu-toggle-hed {
   background-color: transparent;
   border: none;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .menu-toggle-hed {
+    display: none;
+  }
 }
 
 .menu-toggle {
@@ -246,12 +237,6 @@ body {
   outline: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
 }
 
 .menu-toggle:hover,
@@ -634,12 +619,13 @@ body {
 }
 
 /* ----- section 3 ----- */
-.section-bottom {
-  display: none;
+@media only screen and (max-width: 1157px) {
+  .section-bottom {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1158px) {
   .section-bottom {
-    display: contents;
     padding-bottom: 120px;
   }
 }
