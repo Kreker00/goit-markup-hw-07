@@ -224,6 +224,10 @@ body {
   fill: var(--white-background);
   background-color: var(--ocean-pressed-state);
   border: 0; */
+.menu-toggle-hed {
+  background-color: transparent;
+  border: none;
+}
 
 .menu-toggle {
   min-height: 24px;
